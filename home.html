@@ -1,0 +1,184 @@
+<!--home.html is the user interface for our home page
+it contains the welcome page survey forms, contact form,about page and our team members -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vedant</title>
+    <link rel="stylesheet" href="CSS/home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4e9e2509eb.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-------- header ---------->
+    <section id="header" data-aos="fade-down" data-aos-duration="1000" >
+        <nav>
+            <a href="https://en.wikipedia.org/wiki/Sign_language" ><img src="image2/asl_logo.ico"></a>
+            <div class="navlinks" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#forms">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="textbox">
+            <h1>Every Sign </h1>
+            <p>The issue isn't that the deaf doesn't hear but it's that the world<br> chooses to ignore.</p>
+            <a href="index.html" class="button">Check Out Our Sign Language Predictor</a>
+            <a href="https://en.wikipedia.org/wiki/Sign_language" class="button">More About Sign Language.</a>
+            <a href="form.html" class="button">Survey Form</a>
+        </div>
+    </section>
+    <!---------javascript for toggle menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>   
+    <!------------------------------------------------ABOUT----------------------------------------------------->
+    <section id="about">
+        <div class="boxx" >
+            <a href="#header"><i class="fa fa-home" ></i></a>
+            <h1>ABOUT</h1>
+            <div class="contentt" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="40">
+                <p> The lack of general awareness about deaf issues, and in particular the lack of sign language users in every day public spaces create the biggest barriers
+                     to deaf youths integration into society. Our project  is aimed at helping people connect better with each other. We have developed a way for people with
+                      hearing impartment to be able to communicate with those who do not know their language. Using this program, user can sign multiple words with one gesture 
+                      and copy the translated text with the click of a button.<br><br>When we speak of language barrier we subconsciously
+                     think of spoken languages but what about the language that can not be heard?  Our project focuses on translation of sign language
+                      for better integration of deaf youths into society. Most of the technology meant to help the deaf focused on converting speech to text. But very
+                 few actually focused on their language.  So we came up with the idea of converting sign language to text. It will not only help people 
+                 communicate but also foster an interest in the laguage.<br><br>In future we'll try and implement a video call feature so that the deaf can easily talk with other people
+                 who do not know their sign language.
+                </p>
+                <img src="image2/signabout.png" alt="image">
+            </div>
+
+        </div>
+        <hr>
+
+    </section>
+    
+    <!-------------------------------------------------team------------------------------------------------------>
+     <section id="team">
+        <div class="container">
+            <a href="#header"><i class="fa fa-home" ></i></a>
+            <h1>OUR TEAM</h1>
+            <div class="row">
+                <div class="col " data-aos="fade-left" data-aos-duration="1000">
+                    <div class="img-box">
+                        <img src="image2/team.jpg">
+                        <ul>
+                            <a href="https://github.com/NischayGoyal1"><Li>github link<i class="fa fa-github"></i></Li></a>
+
+                        </ul>
+                    </div>
+                    <h3>Nischay Goyal</h3>
+                    <h4>Student</h4>
+                </div>
+                <div class="col " data-aos="fade-left" data-aos-duration="1000">
+                    <div class="img-box">
+                        <img src="image2/team2.jpg">
+                        <ul>
+                            <a href="https://github.com/riiyaaa"><Li>github link<i class="fa fa-github"></i></Li></a>
+
+                        </ul>
+                    </div>
+                    <h3>Riya Mittal</h3>
+                    <h4>Student</h4>
+                </div>
+                <div class="col " data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="img-box">
+                        <img src="image2/team3.jpg">
+                        <ul>
+                            <a href=""><Li>github link<i class="fa fa-github"></i></Li></a>
+
+                        </ul>
+                    </div>
+                    <h3>Vedant Sharma</h3>
+                    <h4>Student</h4>
+                </div>
+                <div class="col " data-aos="fade-right" data-aos-duration="1000">
+                    <div class="img-box">
+                        <img src="image2/team4.jpg">
+                        <ul>
+                            <a href="https://github.com/Ydvaaman"><Li>github link<i class="fa fa-github"></i></Li></a>
+
+                        </ul>
+                    </div>
+                    <h3>Aman Yadav</h3>
+                    <h4>Student</h4>
+                </div>
+                <div class="col " data-aos="fade-right" data-aos-duration="1000">
+                    <div class="img-box">
+                        <img src="image2/team5.jpg">
+                        <ul>
+                            <a href="https://github.com/rockharshitmaurya"><Li>github link<i class="fa fa-github"></i></Li></a>
+
+                        </ul>
+                    </div>
+                    <h3>Harshit Maurya</h3>
+                    <h4>Student</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+<!-----------------------------------------------------------------form--------------------------------------------------->
+    <section id="forms" data-aos="fade-right" data-aos-duration="1000">
+        <a href="#header"><i class="fa fa-home" ></i></a>
+        <h3>CONTACT US</h3>
+        <div class="text">
+            <h2>YOUR DETAILS...</h2>
+        </div>
+    <div class="main">
+        <h1>CONTACT FORM</h1>
+        <form action="mailto:vedants2003@gmail.com" method="post">
+            <div class="inputtext">
+                <input type="text" required>
+                <span></span>
+                <label>Full Name</label>
+            </div>
+            <div class="inputtext">
+                <input type="email" required>
+                <span></span>
+                <label>E-Mail</label>
+            </div>
+            <div class="inputtext">
+                <input type="text" required>
+                <span></span>
+                <label>Region</label>
+            </div>
+            <div class="inputtext">
+                <input type="number" required>
+                <span></span>
+                <label>Age(optional)</label>
+            </div>
+            <div class="inputtext">
+                <input type="text" required>
+                <span></span>
+                <label>Additional Comments</label>
+            </div>
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
